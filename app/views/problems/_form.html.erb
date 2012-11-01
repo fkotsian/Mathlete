@@ -1,0 +1,37 @@
+<%= form_for(@problem) do |f| %>
+  <% if @problem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@problem.errors.count, "error") %> prohibited this problem from being saved:</h2>
+
+      <ul>
+      <% @problem.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numAtt %><br />
+    <%= f.number_field :numAtt %>
+  </div>
+  <div class="field">
+    <%= f.label :numCorrect %><br />
+    <%= f.number_field :numCorrect %>
+  </div>
+  <div class="field">
+    <%= f.label :percentCorrect %><br />
+    <%= f.text_field :percentCorrect %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <%= f.label :answer %><br />
+    <%= f.number_field :answer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

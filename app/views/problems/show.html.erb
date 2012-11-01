@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numatt:</b>
+  <%= @problem.numAtt %>
+</p>
+
+<p>
+  <b>Numcorrect:</b>
+  <%= @problem.numCorrect %>
+</p>
+
+<p>
+  <b>Percentcorrect:</b>
+  <%= @problem.percentCorrect %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @problem.content %>
+</p>
+
+<p>
+  <b>Answer:</b>
+  <%= @problem.answer %>
+</p>
+
+
+<%= link_to 'Edit', edit_problem_path(@problem) %> |
+<%= link_to 'Back', problems_path %>
