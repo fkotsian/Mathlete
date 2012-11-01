@@ -3,13 +3,13 @@
 one:
   numAtt: 1
   numCorrect: 1
-  percentCorrect: 1.5
+  percentCorrect: 
   content: MyString
-  answer: 1
+  answer: 
 
 two:
   numAtt: 1
   numCorrect: 1
-  percentCorrect: 1.5
+  percentCorrect: 
   content: MyString
-  answer: 1
+  answer: 
