@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @problem.content %><h1>
+
+<%= form_for @problem do |f| %>
+	<%= f.label :answer %>
+	<%= f.number_field :answer %>
+	
+	<%= f.submit %>
+<% end %>
+
 <p>
   <b>Numatt:</b>
   <%= @problem.numAtt %>
